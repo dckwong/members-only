@@ -1,0 +1,7 @@
+<% provide(:title, "New Post") %>
+<%= form_for(:post, url: posts_path) do |f| %>
+	<%= f.label :content %>
+	<%= f.text_area :content %>
+
+	<%= f.submit "Submit Post" %>
+<% end %>

@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+<div class="container">
+  <div id="error_explanation">
+  <p>The form contains the following errors:</p>
+  </div>
+  <ul>
+  <% @user.errors.full_messages.each do |e| %>
+    <li><%= e %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
