@@ -1,0 +1,35 @@
+<% provide(:title, "About") %>
+<% path = 'http://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav' %>
+<h1 class="text-center">About</h1>
+<p class="text-center">This web app is a <%= link_to 'practice app', path %> for bringing several things together from the rail's tutorial. Creating new users has not been implemented but creating new posts has once you've logged in. Try it out with the following users: </p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Password</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Derek</th>
+			<th>derek@example.com</th>
+			<th>foobar</th>
+		</tr>
+		<tr>
+			<th>Steph</th>
+			<th>steph@example.com</th>
+			<th>foobar</th>
+		</tr>
+		<tr>
+			<th>Adam</th>
+			<th>adamk@example.com</th>
+			<th>foobar</th>
+		</tr>
+		<tr>
+			<th>Draymond</th>
+			<th>draymond@example.com</th>
+			<th>foobar</th>
+		</tr>			
+	</tbody>
+</table>

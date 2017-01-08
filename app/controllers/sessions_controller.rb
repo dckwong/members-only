@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
 			redirect_to root_path
 		else
 			flash.now[:danger] = "Invalid username/password combination"
-			debugger
 			render 'new'
 		end
 	end

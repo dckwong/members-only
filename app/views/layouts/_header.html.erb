@@ -6,6 +6,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "About",  about_path%></li>
         <% if logged_in? %>
           <li><%= link_to "New Post", new_post_path %></li>
           <li><%= link_to "Log out", logout_path, method: 'delete' %></li>
