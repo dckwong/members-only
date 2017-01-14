@@ -7,8 +7,7 @@
 	<div class="row">
 		<h2><%= p.content %></h2>
 		<% if logged_in? %>
-			<% user = User.find(p.user_id) %>
-			<p>Written by: <%= user.name %></p>
+			<p>Written by: <%= p.user.name %></p>
 		<% else %>
 			<p>Log in to see author</p>
 		<% end %>

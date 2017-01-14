@@ -6,6 +6,7 @@ class User < ApplicationRecord
 		uniqueness: {case_sensitive: false} 
 	validates :password, length: {minimum: 6}, presence: true
 	has_secure_password
+	has_many :posts
 
 	before_save :downcase_email
 	before_create :create_remember_token
